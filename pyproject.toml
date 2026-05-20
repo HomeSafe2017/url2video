@@ -1,0 +1,13 @@
+[project]
+name = "url2video"
+version = "0.1.0"
+description = "Douyin video downloader using hellotik.app"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.40.0",
+    "requests>=2.28.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
