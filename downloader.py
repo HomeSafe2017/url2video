@@ -9,28 +9,8 @@ from playwright.sync_api import sync_playwright, Page, Browser, Download
 
 
 def extract_douyin_url(text: str) -> Optional[str]:
-    """
-    从文本中提取抖音分享链接
-    
-    Args:
-        text: 包含抖音链接的文本，如 "8.20 复制打开抖音... https://v.douyin.com/xxx/"
-    
-    Returns:
-        提取到的抖音链接，如果未找到则返回 None
-    """
+    """返回原始输入文本（传入的已经是抖音链接）"""
     return text
-    patterns = [
-        r'https?://v\.douyin\.com/[A-Za-z0-9]+/?',
-        r'https?://www\.douyin\.com/video/\d+',
-        r'https?://www\.iesdouyin\.com/share/video/\d+',
-    ]
-    
-    for pattern in patterns:
-        match = re.search(pattern, text)
-        if match:
-            return match.group(0)
-    
-    return None
 
 
 def download_video_with_hellotik(
