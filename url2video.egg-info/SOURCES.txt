@@ -1,7 +1,0 @@
-downloader.py
-pyproject.toml
-url2video.egg-info/PKG-INFO
-url2video.egg-info/SOURCES.txt
-url2video.egg-info/dependency_links.txt
-url2video.egg-info/requires.txt
-url2video.egg-info/top_level.txt
